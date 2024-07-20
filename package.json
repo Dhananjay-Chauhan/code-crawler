@@ -2,7 +2,7 @@
   "name": "code-crawler",
   "displayName": "code-crawler",
   "description": "An awesome extension to freely navigate  through your code  without using mouse  and much effort.",
-  "version": "0.0.1",
+  "version": "1.1.1",
   "engines": {
     "vscode": "^1.91.0"
   },
@@ -41,35 +41,34 @@
     "keybindings": [
       {
         "command": "code-crawler.navigateNext",
-        "key": "ctrl+shift+]", 
+        "key": "ctrl+shift+]",
         "when": "editorTextFocus"
       },
       {
         "command": "code-crawler.navigatePrevious",
-        "key": "ctrl+shift+[", 
+        "key": "ctrl+shift+[",
         "when": "editorTextFocus"
       },
       {
         "command": "code-crawler.nextError",
-        "key": "ctrl+shift+1", 
+        "key": "ctrl+shift+1",
         "when": "editorTextFocus"
       },
       {
         "command": "code-crawler.prevError",
-        "key": "ctrl+shift+2", 
+        "key": "ctrl+shift+2",
         "when": "editorTextFocus"
       },
       {
         "command": "code-crawler.jumpToMatchingBracket",
-        "key": "ctrl+shift+3", 
+        "key": "ctrl+shift+3",
         "when": "editorTextFocus"
       },
       {
         "command": "code-crawler.selectBetweenBrackets",
-        "key": "ctrl+shift+4", 
+        "key": "ctrl+shift+4",
         "when": "editorTextFocus"
       }
-
     ]
   },
   "scripts": {
