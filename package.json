@@ -12,10 +12,65 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "code-crawler.helloWorld",
-      "title": "Hello World"
-    }]
+    "commands": [
+      {
+        "command": "code-crawler.navigateNext",
+        "title": "Hello World"
+      },
+      {
+        "command": "code-crawler.navigatePrevious",
+        "title": "Hello Worlds"
+      },
+      {
+        "command": "code-crawler.nextError",
+        "title": "Hello Error"
+      },
+      {
+        "command": "code-crawler.prevError",
+        "title": "Bye Error"
+      },
+      {
+        "command": "code-crawler.jumpToMatchingBracket",
+        "title": "Hello Bracket"
+      },
+      {
+        "command": "code-crawler.selectBetweenBrackets",
+        "title": "Hello inBracket"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "code-crawler.navigateNext",
+        "key": "ctrl+shift+]", 
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "code-crawler.navigatePrevious",
+        "key": "ctrl+shift+[", 
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "code-crawler.nextError",
+        "key": "ctrl+shift+1", 
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "code-crawler.prevError",
+        "key": "ctrl+shift+2", 
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "code-crawler.jumpToMatchingBracket",
+        "key": "ctrl+shift+3", 
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "code-crawler.selectBetweenBrackets",
+        "key": "ctrl+shift+4", 
+        "when": "editorTextFocus"
+      }
+
+    ]
   },
   "scripts": {
     "lint": "eslint .",
